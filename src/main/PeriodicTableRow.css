@@ -1,0 +1,13 @@
+.periodic-table-row{
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-template-columns: 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554%; 
+
+}
+
+.info{
+
+    grid-column: 3 / span 10;
+    grid-row: 1 / span 3;
+    border: solid black 1px;
+}
