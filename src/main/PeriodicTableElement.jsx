@@ -12,8 +12,8 @@ export default props => {
     classes += props.type === "halogens" ? 'halogens ' : ''
     classes += props.type === "otherMetals" ? 'other-metals ' : ''
     classes += props.type === "transitionMetals" ? 'transition-metals ' : ''
-    classes += props.type === "lanthanides" ? 'lanthanides ' : ''
-    classes += props.type === "actinides" ? 'actinides ' : ''
+    classes += props.type === "lanthanides" ? 'lanthanides lanthanides-position ' : ''
+    classes += props.type === "actinides" ? 'actinides actinides-position ' : ''
     classes += props.family === 1 ? 'family-one ' : ''
     classes += props.family === 2 ? 'family-two ' : ''
     classes += props.family === 3 ? 'family-three ' : ''
@@ -40,9 +40,8 @@ export default props => {
     classes += props.period === 6 ? 'period-six ' : ''
     classes += props.period === 7 ? 'period-seven ' : ''
     classes += props.period === 8 ? 'period-eight ' : ''
-    console.log(props)
     return (
-        <div className={classes}>
+        <div id={props.atomicNumber} className={classes} onMouseEnter={e => props.hover && props.hover(props)} onClick={e => props.click && props.click(props)}>
             <div className='atomic-number'><small>{props.atomicNumber}</small></div>
             <div className='element-simbol'><h3>{props.element}</h3>
             <small>{props.elementName}</small></div>

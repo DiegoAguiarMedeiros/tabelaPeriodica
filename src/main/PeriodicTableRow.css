@@ -4,10 +4,11 @@
     grid-template-columns: 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554% 5.554%; 
 
 }
-
-.info{
-
-    grid-column: 3 / span 10;
-    grid-row: 1 / span 3;
-    border: solid black 1px;
+.modal{
+    border: blue 1px solid;
+    position: absolute;
+    min-height: 90%;
+    width: 85%;
+    background-color: cornsilk;
+    margin: auto;
 }

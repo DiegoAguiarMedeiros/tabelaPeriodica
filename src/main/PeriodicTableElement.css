@@ -5,6 +5,7 @@
     border-left: 1px solid #0000;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .atomic-number{
     align-self: flex-start;
@@ -142,42 +143,75 @@
 .no-metal {
     background-color: #a1d344;
 }
-
+.no-metal:hover {
+    background-color: #a1d34483;
+}
 .noble-gases {
     background-color: #3d9de3;
+}
+.noble-gases:hover {
+    background-color: #3d9de383;
 }
 
 .alkali-metals {
     background-color: #f1b200;
 }
+.alkali-metals:hover {
+    background-color: #f1b20083;
+}
 
 .alkaline-earth-metals {
     background-color: #eada00;
+}
+.alkaline-earth-metals:hover {
+    background-color: #eada0083;
 }
 
 .semi-metals {
     background-color: #4db6ac;
 }
+.semi-metals:hover {
+    background-color: #4db6ac83;
+}
 
 .halogens {
     background-color: #70cbeb;
+}
+.halogens:hover {
+    background-color: #70cbeb83;
 }
 
 .other-metals {
     background-color: #a2c7d3;
 }
+.other-metals:hover {
+    background-color: #a2c7d383;
+}
 
 .transition-metals {
     background-color: #eb8e8e;
 }
-.lanthanides {
+.transition-metals:hover {
+    background-color: #eb8e8e83;
+}
+.lanthanides-position {
     margin-top: 20px;
     grid-row-start: 9;
     grid-row-end: 10;
+}
+.lanthanides {
     background-color: #90e3e9;
 }
-.actinides {
+.lanthanides:hover {
+    background-color: #90e3e983;
+}
+.actinides-position {
     grid-row-start: 10;
     grid-row-end: 11;
+}
+.actinides {
     background-color: #dcadd6;
+}
+.actinides:hover {
+    background-color: #dcadd683;
 }

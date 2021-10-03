@@ -701,7 +701,7 @@ const elements =
         },
         {
             "atomicNumber": 87,
-            "element": "fr",
+            "element": "Fr",
             "elementName": "Frâncio",
             "type": "alkaliMetals",
             "family": 1,
@@ -964,6 +964,7 @@ const elements =
             "period": 7,
         },
     ]
+    
 const periodOne = elements => elements
 
 export default class PeriodicTable extends Component {
