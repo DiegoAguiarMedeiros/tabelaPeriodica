@@ -3,8 +3,7 @@ import './PeriodicTableInfo.css'
 
 // eslint-disable-next-line
 export default props => {
-    console.log(props)
-    let classes = props.elements.atomicNumber === null ? 'd-none ' : ''
+    let classes = props.elements.displayInfo === 'none' ? 'd-none ' : ''
     let classesElement = 'periodic-table-element-info '
     classesElement += props.elements.type === "noMetal" ? 'no-metal ' : ''
     classesElement += props.elements.type === "nobleGases" ? 'noble-gases ' : ''

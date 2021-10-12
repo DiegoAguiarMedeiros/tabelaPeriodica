@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import PeriodicTableRow from './PeriodicTableRow'
-import './PeriodicTable.css'
+import PeriodicTableRow from '../components/PeriodicTableRow'
 
+import './PeriodicTable.css'
 const elements =
     [
         {
@@ -964,17 +964,18 @@ const elements =
             "period": 7,
         },
     ]
+
     
-const periodOne = elements => elements
+const printRow = element => element
 
 export default class PeriodicTable extends Component {
 
-
+    
 
     render() {
         return (
             <div className='periodic-table'>
-                <PeriodicTableRow elements={elements.map(periodOne)} key="pOne" />
+                <PeriodicTableRow elements={elements.map(printRow)} key="pOne" />
             </div>
         )
     }

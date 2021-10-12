@@ -2,7 +2,7 @@ import React from 'react'
 import './PeriodicTableElement.css'
 
 // eslint-disable-next-line
-export default props => {
+const element = props => {
     let classes = 'periodic-table-element '
     classes += props.type === "noMetal" ? 'no-metal ' : ''
     classes += props.type === "nobleGases" ? 'noble-gases ' : ''
@@ -41,10 +41,12 @@ export default props => {
     classes += props.period === 7 ? 'period-seven ' : ''
     classes += props.period === 8 ? 'period-eight ' : ''
     return (
-        <div id={props.atomicNumber} className={classes} onMouseEnter={e => props.hover && props.hover(props)} onClick={e => props.click && props.click(props)}>
+        <div id={props.atomicNumber} className={classes} onMouseEnter={e => props.hover && props.hover(props)} onMouseLeave={e => props.mouseOut && props.mouseOut()}  onClick={e => props.click && props.click(props)}>
             <div className='atomic-number'><small>{props.atomicNumber}</small></div>
             <div className='element-simbol'><h3>{props.element}</h3>
             <small>{props.elementName}</small></div>
                  </div >
     )
 }
+
+export default element

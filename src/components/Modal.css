@@ -1,0 +1,44 @@
+
+.modal{
+    border: rgb(136, 136, 136) 1px solid;
+    position: absolute;
+    height: 90%;
+    width: 85%;
+    background-color: #fff;
+    margin: auto;
+}
+
+.modal .modal-header{
+    border-bottom: rgb(136, 136, 136) 1px solid;
+    padding: 15px 15px 15px 20px;
+    height: 15%;
+    display: flex;
+}
+.modal .modal-header h1{
+    flex-grow: 3;
+    flex-direction: column;
+    margin: 0;
+}
+.modal .modal-header span{
+    cursor: pointer;
+    flex-direction: column;
+    float: right;
+}
+.modal .modal-body{
+    padding: 15px;
+    height: 70%;
+}
+.modal .modal-bottom{
+    border-top: rgb(136, 136, 136) 1px solid;
+    padding: 20px 15px 15px 15px;
+    height: 15%;
+}
+.modal .modal-bottom button{
+    cursor: pointer;
+    float: right;
+    padding: 10px 30px;
+    border: rgb(0, 0, 0,0.1) 1px solid;
+    background-color: #008CBA;
+    color: #fff;
+}
+
